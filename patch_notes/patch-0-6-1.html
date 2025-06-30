@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RuneCraft Patch 0.6.1</title>
+  <style>
+    :root {
+      --bg: #bda169;
+      --card: #d0b57d;
+      --accent: #5c0f0f;
+      --text: #3A3A3A;
+      --muted: #3A3A3A;
+      --warn: #facc15;
+      --fix: #22c55e;
+      --change: #fb923c;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+
+    .notice {
+      background: var(--card);
+      border-left: 4px solid var(--warn);
+      padding: 1rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      font-weight: 500;
+      color: var(--warn);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: var(--card);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 0 0 1px #21262d;
+    }
+
+    h2 {
+      color: var(--accent);
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: var(--text);
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.25rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .fix { color: var(--fix); }
+    .change { color: var(--change); }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>RuneCraft Patch 0.6.1</h1>
+    <p class="muted">Release Date: 11/13/2021</p>
+  </header>
+
+  <div class="notice">
+    ⚠️ The Patch Notes you are reading are no longer current. Ensure you are using the latest version of RuneCraft. <br />
+    Next Patch Notes: <strong>0.6.2</strong> - 11/23/2021
+  </div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      RuneCraft 0.6.1 brings a slew of bug fixes, improvements, and balance changes to many parts of the add-on. Notably, this update patches an AFK agility XP farm and optimizes the Thieving skill system.
+    </p>
+  </section>
+
+  <section>
+    <h2>Patch Notes</h2>
+
+    <h3>General - <span class="fix">Bug Fixes</span></h3>
+    <ul>
+      <li>Mastery Cloaks now give the correct effect values</li>
+      <li>Pigs now reward the correct combat XP</li>
+      <li>Treasure Goblins' spawn rules removed</li>
+    </ul>
+
+    <h3>General - <span class="change">Changes</span></h3>
+    <ul>
+      <li>All armor now plays an equip sound</li>
+      <li>Particles from armor effects have been removed</li>
+      <li>Level-up sounds now audible to players within 12 blocks (was 6)</li>
+      <li>Wither and Ender Dragon have higher Party Hat drop chance</li>
+      <li>Their armor sets have been removed</li>
+      <li>Realm loading screen removed</li>
+    </ul>
+
+    <h3>Agility</h3>
+    <ul class="fix">
+      <li>Fixed exploit for AFK agility farming</li>
+    </ul>
+    <ul class="change">
+      <li>Graceful Cape durability: 55 → 165</li>
+      <li>Graceful Top: 80 → 240</li>
+      <li>Graceful Leggings: 75 → 225</li>
+      <li>Graceful Boots: 65 → 195</li>
+    </ul>
+
+    <h3>Prayer - <span class="change">Changes</span></h3>
+    <ul>
+      <li>Diamonds in Zamorak Temple chests slightly reduced</li>
+      <li>Party Hat drop chance increased</li>
+      <li>Temple spawn frequency: every 49 chunks (was 64)</li>
+    </ul>
+
+    <h3>Thieving - <span class="fix">Bug Fixes</span></h3>
+    <ul>
+      <li>No XP from failed steals</li>
+      <li>No level-up during stealing</li>
+      <li>Piglins/Wandering Traders give correct XP</li>
+      <li>Piglins no longer make extra sounds</li>
+      <li>Item Frames can be stolen from Cartographer Villagers</li>
+      <li>Shepherds can be stolen from</li>
+      <li>General thieving improvements</li>
+    </ul>
+
+    <h3>Thieving - <span class="change">Changes</span></h3>
+    <ul>
+      <li>Rogue Mask durability: 55 → 165</li>
+      <li>Rogue Top: 80 → 240</li>
+      <li>Rogue Trousers: 75 → 225</li>
+      <li>Rogue Boots: 65 → 195</li>
+      <li>XP changes:</li>
+      <ul>
+        <li>Fletchers: 560 → 550</li>
+        <li>Weaponsmiths: 630 → 610</li>
+        <li>Wandering Traders: 780 → 730</li>
+        <li>Armorsmiths: 860 → 790</li>
+        <li>Clerics: 920 → 850</li>
+        <li>Librarians: 1010 → 910</li>
+        <li>Piglins: 1100 → 970</li>
+      </ul>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Estrongel | RuneCraft Patch Notes Archive
+  </footer>
+
+</body>
+</html>
